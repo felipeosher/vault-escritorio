@@ -39,3 +39,27 @@ Registro de decisões combinadas entre Felipe e Bench. Ordem cronológica.
 Objetivo: que abrir qualquer ficha (ex.: cliente) revele de cara tudo que se conecta a ela, navegável com um clique, com backlinks se montando sozinhos.
 
 **Primeiro caso montado:** Spazio Academia — ficha do cliente + contrato de locação 2022 + processo de despejo 0590155-64.2024.8.04.0001, todos interligados.
+
+## 2026-06-21 — Ferramenta de conhecimento: Obsidian (não Notion) + regra de interligação
+
+**Contexto:** Felipe considerou migrar para o Notion para "ir a fundo em análise processual e estratégia".
+
+**Decisão:** Ficar no Obsidian. Motivos: (1) Bench opera o vault direto por arquivo no disco — ler, escrever, commit, sync — sem fricção de API/rate limit; Notion viraria cliente de API. (2) Versionamento Git limpo. (3) Dados locais e sigilosos sob controle. (4) Análise profunda é texto estruturado + links + timeline, que markdown faz bem; para views relacionais tipo Notion, usar Dataview/Bases lendo o frontmatter das notas.
+
+**Regra permanente (interligação) — confirmada por Felipe:**
+- Toda entidade vira nota própria e tudo se interliga por `[[wikilink]]`.
+- Processo linka cliente + contrato; contrato linka cliente + processos; cliente é a ficha-mãe que linka tudo dele.
+- Sempre criar/atualizar as conexões ao arquivar qualquer documento. Nada de nota solta.
+- Aproveitar backlinks automáticos e o grafo do Obsidian.
+
+**Infra:** adicionado `.gitattributes` (LF) no vault para eliminar conflito fantasma CRLF/LF entre servidor (Linux) e Windows. Plugin Obsidian Git no Windows: ligar "Disable notifications" para parar o spam de popups de sync (sync continua ativo).
+
+**Reforço do Felipe:** "vai sempre botando na memória do Bench, use como seu cérebro também". O vault é cérebro de trabalho ativo do Bench — registrar decisões/aprendizados/contexto aqui de forma contínua, não esporádica.
+
+## 2026-06-21 — Caso Spazio: atuamos para a DEFESA (réu)
+
+- Processo 0590155-64.2024.8.04.0001 — Despejo SICOOB (autor) x Spazio Academia (réu). **Felipe defende a Spazio (réu).**
+- Situação desfavorável: liminar de despejo deferida (28/02/2025), não houve desocupação voluntária + depredação registrada (mov. 46.1, 29/05/2025), mandado de despejo com força policial autorizado, decisão reiterada em 19/02/2026, prazos decorridos em 06/03/2026 sem manifestação (cenário de revelia/inércia da defesa anterior — adv. anterior Mayara Almeida Macedo OAB/AM 14881).
+- Export PROJUDI vai até 06/03/2026, mas foi gerado em 15/06/2026 → vão de ~3 meses a confirmar no PROJUDI.
+- Notas interligadas criadas: [[Spazio Academia de Ginástica e Musculação]] (cliente) ↔ [[Contrato de Locação Comercial - Spazio 2022]] ↔ [[Resumo - Processo 0590155-64.2024.8.04.0001]].
+- PENDENTE p/ montar dossiê estratégico de defesa: (1) Spazio ainda está no imóvel? (2) objetivo = resistir ao despejo ou negociar saída + reduzir passivo (débito + multa diária até R$60k)? (3) verificar andamento atual no PROJUDI.
