@@ -6,6 +6,7 @@ vara: 12ª Vara Cível e de Acidentes de Trabalho - Comarca de Manaus/AM
 distribuicao: 2024-11-14
 fonte: Export PROJUDI (443 páginas) recebido via WhatsApp em 2026-06-21
 status: Liminar de desocupação deferida e renovada; mandado de despejo com força policial expedido; aguardando cumprimento
+lado_escritorio: Réu (Spazio Academia) - DEFESA
 ---
 
 # Processo 0590155-64.2024.8.04.0001 — SICOOB UniCentro Norte x Spazio Academia
@@ -13,8 +14,8 @@ status: Liminar de desocupação deferida e renovada; mandado de despejo com for
 ## Partes
 - **Promovente (Autor):** Cooperativa de Crédito de Livre Admissão do Centro Norte Brasileiro — SICOOB UniCentro Norte Brasileiro (CNPJ 02.282.709/0001-52). Sucessora por incorporação da SICOOB UniAM (CNPJ 01.566.038/0001-99).
   - Advs.: Kennio Souza Azevedo (OAB/AM 10487), Débora de Campos Frota (OAB/AM 10140)
-- **Promovido (Réu):** Spazio Academia de Ginástica e Musculação Ltda – EPP (Academia Spazio Dom Pedro) — CNPJ 18.930.675/0001-03. Av. Pedro Teixeira, 267, Dom Pedro I, Manaus/AM.
-  - Adv.: Mayara Almeida Macedo (OAB/AM 14881)
+- **Promovido (Réu) — CLIENTE DO ESCRITÓRIO:** Spazio Academia de Ginástica e Musculação Ltda – EPP (Academia Spazio Dom Pedro) — CNPJ 18.930.675/0001-03. Av. Pedro Teixeira, 267, Dom Pedro I, Manaus/AM.
+  - Adv. anterior constituída: Mayara Almeida Macedo (OAB/AM 14881). Escritório (Felipe Benchaya) atua/atuará pela DEFESA.
 
 ## Objeto
 Ação de despejo por inadimplência de aluguéis e encargos c/c rescisão contratual e cobrança de débitos locatícios, **com pedido de liminar**.
@@ -30,14 +31,26 @@ Ação de despejo por inadimplência de aluguéis e encargos c/c rescisão contr
 - **24-25/02/2026 (mov. 67-69)** — Publicação no DJEN. Prazo de 5 dias úteis: **26/02 a 04/03/2026**.
 - **06/03/2026 (mov. 70-71)** — **Decorrido o prazo** para ambas as partes (Spazio e SICOOB) referente ao evento seq. 64.
 
-## Situação atual
-Liminar de desocupação **deferida e mantida**, com mandado de despejo + força policial autorizados. Decisão de 19/02/2026 reiterou o cumprimento do despacho de mov. 46.1, custas já recolhidas. Prazos da última intimação **decorreram em 06/03/2026** sem manifestação. O processo está, ao que consta no export, na fase de **efetivação do despejo** (cumprimento do mandado).
+## Situação atual (perspectiva da DEFESA / Spazio)
+Liminar de desocupação **deferida e mantida**, com mandado de despejo + força policial autorizados contra a cliente. Decisão de 19/02/2026 reiterou o cumprimento do despacho de mov. 46.1, custas já recolhidas. Prazos da última intimação **decorreram em 06/03/2026** sem manifestação da Spazio (possível revelia/preclusão). O processo está, ao que consta no export, na fase de **efetivação do despejo** (cumprimento do mandado) — **risco iminente de despejo com força policial sem novo aviso**.
+
+### Riscos para a cliente
+- Despejo forçado a qualquer momento (decisão e prazos já vencidos).
+- Multa diária de R$ 1.000/dia (teto 60 dias = até R$ 60.000) potencialmente acumulada.
+- Menção a **depredação do imóvel** → risco de pedido indenizatório.
+- Débito locatício em aberto (aluguéis R$ 27.000/mês) + encargos.
+
+### Linhas de defesa a investigar
+- Validade da **citação** e eventual **revelia** (prazos decorreram sem manifestação).
+- Possibilidade/preclusão de **purgação da mora** (art. 62, Lei 8.245/91).
+- Atuação anterior da adv. Mayara Almeida Macedo: o que foi (ou não) feito.
+- Definição do objetivo da cliente: **resistir ao despejo** vs **negociar saída e reduzir passivo**.
 
 ## Pontos de atenção / próximos passos possíveis
 - Confirmar no PROJUDI se o **mandado de despejo já foi cumprido** após 06/03/2026 (o export vai até essa data).
 - Verificar andamento da **cobrança dos débitos locatícios** (valor atualizado dos aluguéis em aberto + multa diária acumulada).
-- Conferир se a **multa diária** (R$ 1.000/dia, até 60 dias) foi executada/contabilizada.
-- Definir de qual lado o escritório atua (a procuração inicial e os advs. constituídos indicam atuação pelo **autor/SICOOB**; o PDF foi gerado pelo login de Felipe Benchaya — confirmar).
+- Conferir se a **multa diária** (R$ 1.000/dia, até 60 dias) foi executada/contabilizada.
+- ✅ Lado definido por Felipe em 2026-06-21: escritório atua pela **DEFESA (Spazio, ré)**.
 
 ## Arquivo
 - PDF original: [[Processo 0590155-64.2024.8.04.0001 - export PROJUDI 2026-06-15.pdf]] (443 págs, 33 MB)
