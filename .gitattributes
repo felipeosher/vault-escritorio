@@ -1,0 +1,20 @@
+# Normaliza quebras de linha: evita conflitos-fantasma entre servidor (Linux/LF) e Windows (CRLF)
+* text=auto eol=lf
+
+# Markdown e texto sempre LF
+*.md text eol=lf
+*.markdown text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+
+# Binários: nunca normalizar
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.zip binary
+*.docx binary
+*.xlsx binary
