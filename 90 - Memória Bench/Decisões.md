@@ -121,3 +121,28 @@ Objetivo: que abrir qualquer ficha (ex.: cliente) revele de cara tudo que se con
 **Como transcrever (receita):** carregar a key.env, base64 do áudio, POST com inline_data + prompt de transcrição PT-BR, extrair `candidates[0].content.parts[0].text`.
 
 **Aprendizado:** OpenAI NÃO é o único caminho de transcrição. Rotas: Gemini (configurada), Whisper local (offline, pendente), Groq/Deepgram/etc. Gemini também serve como rota multimodal alternativa (imagem/PDF/áudio) quando útil.
+
+---
+
+## 2026-06-21 — REGRA PERMANENTE: Passo a passo no WhatsApp
+
+**Contexto:** Felipe pediu visibilidade em tempo real do que o Bench está fazendo quando recebe uma tarefa pelo WhatsApp.
+
+**Regra:**
+- Ao executar qualquer tarefa vinda do WhatsApp, enviar mensagens curtas de progresso a cada passo relevante ("lendo X...", "editando Y...", "commitando...").
+- Ao entregar o resultado final, **apagar todas as mensagens intermediárias** de passo a passo para manter o chat limpo.
+- Objetivo: Felipe acompanha em tempo real sem ficar no escuro, mas o histórico final fica só com o resultado.
+
+---
+
+## 2026-06-21 — Preferência de modelo: Claude > GPT 5.5
+
+**Contexto:** Felipe avaliou que com o "cérebro" do Claude (Opus 4.8) o desempenho fica muito melhor que o GPT 5.5 para trabalho jurídico/operacional.
+
+**Decisão:** Priorizar Claude (Opus 4.8 · claudemax) quando houver escolha. Manter cadeia de fallback para nunca ficar sem resposta.
+
+---
+
+## 2026-06-21 — Seletor de modelos: limpeza e convenção de rótulos
+
+**Decisão:** Catálogo enxugado de 17 → 8 modelos. Convenção de rótulo: sempre escrever a ORIGEM no final do alias separada por " · " (claudemax, API, OAuth). Lista final e detalhes no MEMORY.md do sistema.
