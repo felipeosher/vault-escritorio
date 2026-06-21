@@ -85,3 +85,23 @@ Objetivo: que abrir qualquer ficha (ex.: cliente) revele de cara tudo que se con
 **.gitattributes (LF):** adicionado ao vault forçando LF nos arquivos de texto, pra acabar com o conflito fantasma CRLF/LF entre servidor (Linux) e Windows (Obsidian Git). Resolveu os alertas de conflito que o plugin dava no Windows. Felipe vai ligar "Disable notifications" no plugin Obsidian Git pra parar o spam de popups de sync.
 
 **Caso Spazio (primeiro processo arquivado):** Processo 0590155-64.2024.8.04.0001 (despejo). ⚠️ **Felipe atua pela DEFESA (réu Spazio Academia)**, não pelo autor. Situação desfavorável: liminar de despejo deferida, mandado com força policial autorizado, prazos decorridos 06/03/2026 (cenário de revelia/inércia da defesa anterior — adv. anterior Mayara Almeida Macedo OAB/AM 14881). Export do PROJUDI vai só até 06/03/2026; há vão de ~3 meses até 15/06 a confirmar. Teia de notas criada: cliente ↔ contrato ↔ processo, todas interligadas. **Pendente:** montar dossiê estratégico da defesa — falta Felipe confirmar (1) se a Spazio ainda está no imóvel e (2) se objetivo é resistir ao despejo ou negociar saída reduzindo passivo.
+
+---
+
+## 2026-06-21 — Caso Spazio: virada de tese (defesa ativa)
+
+**Contexto:** Felipe (que defende a Spazio/ré) produziu estratégia v2 atacando a raiz dominial em vez de só resistir ao despejo.
+
+**Núcleo da tese:**
+- O elo viciado a derrubar é a **DOAÇÃO DE 2020 (R-5)**: a Spazio doou seu único imóvel à sócia Amanda sem deliberação social/anuência de Nair.
+- Efeito dominó: nula a doação de 2020 → Amanda nunca foi dona legítima → a dação de 2023 ao SICOOB é ineficaz → imóvel volta à Spazio.
+- Reforços: abuso da personalidade/desvio de finalidade (art. 50 CC — bem social pagou dívida de R$ 6,5 mi do irmão Armando), fraude contra credores (158 CC), SICOOB não é terceiro de boa-fé (credor desde 2019).
+- Contra a autora: inadequação da via/carência (485 VI), ilegitimidade ativa (nunca foi locador), exibição da CCB (396 CPC).
+
+**PIVÔ que decide tudo:** confirmar se Nair assinou a doação de 2020 (Livro 949, fls. 135/136, 2º Ofício de Notas Manaus). Não assinou → tese fecha por vício de representação (1.015 p.ú. CC). Assinou → segue por art. 50/158 (exige provar desvio e prejuízo).
+
+**Próximos passos (da estratégia):** reunião com Nair (questionário seção 6 por escrito); obter escritura 2020 + contrato social na JUCEA; peticionar efeito suspensivo no despejo + exibição da CCB; confirmada ausência de aval, ajuizar anulatória/declaratória c/c reintegração; avaliar notícia-crime.
+
+**Notas criadas/interligadas no vault:** Estrategia defesa Spazio - v2; pessoas Nair, Amanda Campos Correa, Armando José Correa; resumo do processo, ficha do cliente e do contrato atualizados.
+
+**Pendência operacional:** Felipe quer dossiê estratégico montado — boa parte já está na nota da estratégia v2. Próximo movimento real é a reunião com Nair e a obtenção dos documentos.

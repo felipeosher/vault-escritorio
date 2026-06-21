@@ -22,8 +22,12 @@ criado_em: 2026-06-21
 - **Aluguel mensal:** R$ 27.000,00 (R$ 25.000,00 nos 6 primeiros meses, retornando ao valor cheio depois).
 - **Garantia:** nenhuma. Locação desprovida das garantias do art. 37 da Lei 8.245/91 — fundamento usado pelo locador para pedir desocupação liminar.
 
+## ⚠️ Premissa contestada
+A estratégia v2 ([[Estrategia defesa Spazio - v2]]) **contesta a própria existência válida desta locação**. Pela matrícula 16.803, a Spazio era a **proprietária** do imóvel (R-1, 2014); Amanda era apenas **sócia**. A locação "Amanda → Spazio" alegada no despejo seria insubsistente, pois decorre de uma cadeia dominial viciada (doação da Spazio a Amanda em 2020 sem anuência da sócia Nair). Tratar este "contrato" como litigioso/possivelmente simulado, não como locação legítima.
+
 ## Litígio relacionado
 - [[Resumo - Processo 0590155-64.2024.8.04.0001]] — Despejo por inadimplência c/c cobrança. Defendemos a [[Spazio Academia de Ginástica e Musculação]] (ré).
+- [[Estrategia defesa Spazio - v2]] — tese de ataque à cadeia dominial.
 
 ## Pendências de documentação
 - Obter cópia integral do contrato de locação (cláusulas, reajuste, prazo, eventuais aditivos).
