@@ -11,6 +11,10 @@ lado_escritorio: Réu (Spazio Academia) - DEFESA
 
 # Processo 0590155-64.2024.8.04.0001 — SICOOB UniCentro Norte x Spazio Academia
 
+## Conexões
+- **Cliente (nosso):** [[Spazio Academia de Ginástica e Musculação]]
+- **Contrato em litígio:** [[Contrato de Locação Comercial - Spazio 2022]]
+
 ## Partes
 - **Promovente (Autor):** Cooperativa de Crédito de Livre Admissão do Centro Norte Brasileiro — SICOOB UniCentro Norte Brasileiro (CNPJ 02.282.709/0001-52). Sucessora por incorporação da SICOOB UniAM (CNPJ 01.566.038/0001-99).
   - Advs.: Kennio Souza Azevedo (OAB/AM 10487), Débora de Campos Frota (OAB/AM 10140)

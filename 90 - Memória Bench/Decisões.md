@@ -22,3 +22,20 @@ Registro de decisões combinadas entre Felipe e Bench. Ordem cronológica.
 - Contrato → `20 - Escritório/02 - Contratos/`
 - Cliente novo → referência em `20 - Escritório/03 - Clientes/`
 - Incerto → `00 - Entrada/`
+
+---
+
+## 2026-06-21 — Regra permanente: interligar notas (cliente ↔ contrato ↔ processo)
+
+**Contexto:** Felipe perguntou se uma nota pode se conectar a outra como no Notion. Sim — o Obsidian faz isso com `[[wikilinks]]` + backlinks automáticos + grafo. É inclusive superior ao Notion nesse ponto.
+
+**Regra permanente:** sempre que eu criar/atualizar uma nota jurídica, **interligar com wikilinks** todas as entidades relacionadas, em ambos os sentidos:
+- **Processo** linka o **cliente** e o(s) **contrato(s)** envolvidos.
+- **Contrato** linka o **cliente** e o(s) **processo(s)** relacionados.
+- **Cliente** funciona como ficha-hub: lista e linka todos os seus processos, contratos, e demais notas.
+- Usar `[[Nota#Seção]]` quando fizer sentido apontar pra um trecho específico.
+- Nunca deixar uma entidade nova (cliente/contrato/processo) solta: sempre conectar à teia existente.
+
+Objetivo: que abrir qualquer ficha (ex.: cliente) revele de cara tudo que se conecta a ela, navegável com um clique, com backlinks se montando sozinhos.
+
+**Primeiro caso montado:** Spazio Academia — ficha do cliente + contrato de locação 2022 + processo de despejo 0590155-64.2024.8.04.0001, todos interligados.
