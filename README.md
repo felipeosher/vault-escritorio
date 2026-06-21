@@ -1,20 +1,31 @@
-# Felipe - Escritório
+# Segundo Cérebro — Felipe Benchaya
 
-Cofre Obsidian para organização pessoal e jurídica.
+Vault Obsidian que funciona como **segundo cérebro do Felipe** e **memória persistente do Bench** (agente OpenClaw).
+
+Tudo que importa — negócios, ideias, pessoas, áreas da vida, jurídico e a memória do Bench — vive aqui, navegável no Obsidian e versionado no Git.
 
 ## Estrutura
 
-- `00 - Entrada`: documentos recebidos ainda não classificados.
-- `01 - Processos`: uma pasta por processo.
-- `02 - Contratos`: cópia centralizada de contratos.
-- `03 - Clientes`: notas por cliente.
-- `04 - Modelos`: modelos de notas, relatórios e checklists.
-- `99 - Arquivo`: material encerrado/inativo.
+- `00 - Entrada`: captura rápida / inbox. Tudo que ainda não foi classificado entra aqui.
+- `10 - Negócios`: empreendimentos e projetos. Uma pasta por negócio.
+- `20 - Escritório`: jurídico. Subpastas:
+  - `01 - Processos`: uma pasta por processo.
+  - `02 - Contratos`: cópia centralizada de contratos.
+  - `03 - Clientes`: notas por cliente.
+  - `04 - Modelos`: modelos de notas, relatórios e checklists.
+- `30 - Ideias`: captura e desenvolvimento de ideias.
+- `40 - Pessoas`: contatos, relacionamentos, contexto.
+- `50 - Áreas da vida`: pessoal, finanças, saúde, estudos.
+- `90 - Memória Bench`: memória persistente do Bench — decisões, preferências do Felipe, aprendizados e contexto entre sessões.
+- `99 - Arquivo`: material encerrado / inativo.
 
-## Fluxo padrão
+## Como funciona o sync
 
-1. Documento chega por WhatsApp/e-mail/upload.
-2. Bench identifica o tipo: petição, contrato, decisão, procuração, comprovante etc.
-3. Bench registra em `00 - Entrada` se ainda não souber o processo.
-4. Depois move/copia para a pasta do processo.
-5. Se for contrato, também mantém cópia ou nota em `02 - Contratos`.
+- O vault mora no servidor OpenClaw e é versionado em Git (repositório privado no GitHub).
+- O Bench lê e escreve notas direto no servidor e faz commit/push.
+- O Felipe abre o mesmo vault no Obsidian (Windows) via plugin **Obsidian Git**, que sincroniza automaticamente.
+
+## Observações
+
+- A estrutura é viva: pastas e nomes podem mudar a qualquer momento sem perder histórico (Git).
+- Conteúdo sensível (clientes/processos): repositório sempre **privado**.
