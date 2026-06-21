@@ -105,3 +105,19 @@ Objetivo: que abrir qualquer ficha (ex.: cliente) revele de cara tudo que se con
 **Notas criadas/interligadas no vault:** Estrategia defesa Spazio - v2; pessoas Nair, Amanda Campos Correa, Armando José Correa; resumo do processo, ficha do cliente e do contrato atualizados.
 
 **Pendência operacional:** Felipe quer dossiê estratégico montado — boa parte já está na nota da estratégia v2. Próximo movimento real é a reunião com Nair e a obtenção dos documentos.
+
+---
+
+## 2026-06-21 — Transcrição de áudio via Gemini API
+
+**Contexto:** Felipe mandou áudio; OpenAI API (transcrição) estava sem cota (`insufficient_quota`); Claude/Opus não transcreve áudio (Anthropic não aceita entrada de voz).
+
+**Solução:** configurada **Gemini API** (Google AI Studio).
+- Chave guardada em `/data/.config/gemini/key.env` (perm 600), fora do vault. Variável `GEMINI_API_KEY`.
+- Modelo: `gemini-2.5-flash` (multimodal, aceita áudio). Endpoint `generativelanguage.googleapis.com/v1beta/.../generateContent`.
+- Áudio .ogg/opus enviado em base64 (inline_data, mime audio/ogg). Funciona.
+- Custo: cota gratuita do Gemini — sobra pro volume do Felipe (áudios curtos, esporádicos).
+
+**Como transcrever (receita):** carregar a key.env, base64 do áudio, POST com inline_data + prompt de transcrição PT-BR, extrair `candidates[0].content.parts[0].text`.
+
+**Aprendizado:** OpenAI NÃO é o único caminho de transcrição. Rotas: Gemini (configurada), Whisper local (offline, pendente), Groq/Deepgram/etc. Gemini também serve como rota multimodal alternativa (imagem/PDF/áudio) quando útil.
