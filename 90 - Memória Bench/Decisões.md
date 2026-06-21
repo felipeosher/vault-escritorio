@@ -63,3 +63,25 @@ Objetivo: que abrir qualquer ficha (ex.: cliente) revele de cara tudo que se con
 - Export PROJUDI vai até 06/03/2026, mas foi gerado em 15/06/2026 → vão de ~3 meses a confirmar no PROJUDI.
 - Notas interligadas criadas: [[Spazio Academia de Ginástica e Musculação]] (cliente) ↔ [[Contrato de Locação Comercial - Spazio 2022]] ↔ [[Resumo - Processo 0590155-64.2024.8.04.0001]].
 - PENDENTE p/ montar dossiê estratégico de defesa: (1) Spazio ainda está no imóvel? (2) objetivo = resistir ao despejo ou negociar saída + reduzir passivo (débito + multa diária até R$60k)? (3) verificar andamento atual no PROJUDI.
+
+---
+
+## 2026-06-21 (madrugada) — VPS confirmado + estorno Managed + decisões da noite
+
+**Ambiente:** Confirmado que estamos rodando no **VPS novo** (Debian 13 trixie, IP 187.77.234.92, OpenClaw 2026.6.8, gateway de pé). A migração do Managed → VPS foi concluída e validada. O ambiente Managed antigo pode ser cancelado.
+
+**Estorno Hostinger (Managed OpenClaw):**
+- Invoice **H_45212469**, R$54,99, compra em **16/06/2026**.
+- Dentro da garantia de 30 dias (confirmado pela própria Hostinger — Nicole, em 19/06).
+- E-mail formalizando o pedido de estorno **enviado** na thread "Re: Openclaw update" (thread Gmail `19edd3ebec3ce808`, msg enviada `19ee8dbdf85a2f02`) em 21/06/2026.
+- ⚠️ **Ação que só o Felipe pode fazer:** segundo a Hostinger, o estorno é disparado por ele no **hPanel → Billing > Payments**. O e-mail formaliza/registra, mas pode ser que respondam pedindo o clique no painel. Bench não consegue logar na conta Hostinger.
+- O estorno **encerra o serviço Managed e apaga os dados na hora** — sem problema, tudo já migrado e validado no VPS.
+- Pendência: acompanhar a resposta da Hostinger e avisar o Felipe.
+
+**Obsidian vs Notion (decisão):** Felipe cogitou migrar pro Notion para análises/estratégias processuais. Decisão = **ficar no Obsidian**. Motivos: integração direta do Bench (manipula arquivos no disco, não via API), versionamento Git limpo, dados locais/sigilosos, e Dataview/Bases entrega as views relacionais que o Notion tem. Profundidade de análise é texto estruturado + links, não limitação da ferramenta.
+
+**Regra de interligação de notas (PERMANENTE):** toda entidade vira nota própria e tudo se interliga por `[[wikilink]]`. Processo linka cliente e contrato; contrato linka cliente e processos; cliente é a ficha-mãe que linka tudo dele. Sempre criar/atualizar essas conexões ao arquivar qualquer documento — nunca deixar nota solta. Aproveitar backlinks automáticos do Obsidian.
+
+**.gitattributes (LF):** adicionado ao vault forçando LF nos arquivos de texto, pra acabar com o conflito fantasma CRLF/LF entre servidor (Linux) e Windows (Obsidian Git). Resolveu os alertas de conflito que o plugin dava no Windows. Felipe vai ligar "Disable notifications" no plugin Obsidian Git pra parar o spam de popups de sync.
+
+**Caso Spazio (primeiro processo arquivado):** Processo 0590155-64.2024.8.04.0001 (despejo). ⚠️ **Felipe atua pela DEFESA (réu Spazio Academia)**, não pelo autor. Situação desfavorável: liminar de despejo deferida, mandado com força policial autorizado, prazos decorridos 06/03/2026 (cenário de revelia/inércia da defesa anterior — adv. anterior Mayara Almeida Macedo OAB/AM 14881). Export do PROJUDI vai só até 06/03/2026; há vão de ~3 meses até 15/06 a confirmar. Teia de notas criada: cliente ↔ contrato ↔ processo, todas interligadas. **Pendente:** montar dossiê estratégico da defesa — falta Felipe confirmar (1) se a Spazio ainda está no imóvel e (2) se objetivo é resistir ao despejo ou negociar saída reduzindo passivo.
