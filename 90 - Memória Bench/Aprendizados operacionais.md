@@ -27,3 +27,12 @@ Pontos importantes que o Bench descobriu junto com o Felipe. Atualizo conforme a
 ## Obsidian como memória do Bench
 - O Felipe pediu que eu vá registrando aqui (Memória Bench) os pontos importantes que descobrimos juntos, não só no MEMORY.md do sistema.
 - Fluxo: aprendizado relevante → anoto aqui no vault → Felipe enxerga e edita no Obsidian.
+
+## Incidente claudemax + PDF + browser (2026-06-21)
+Ver nota dedicada: [[Incidente claudemax 2026-06-21]].
+- Resumo: a chave da API claudemax estava **desabilitada na memória do processo** do gateway (rodando há 19h). Hot-reload (SIGUSR1) **não** recarrega credencial — só restart real do processo resolve.
+- Sintoma: tudo caía em fallback silencioso até o Gemini 2.5 Flash. Texto funcionava, mas eu *parecia* ser o Opus sem ser. PDF/visão falhava (Opus 401, Gemini Pro "unknown model", OpenAI "PDF extraction disabled").
+- Lição 1: `session_status` mostra o modelo *configurado*, não o que realmente respondeu. Conferir logs de `model-fallback` para saber o modelo real.
+- Lição 2: leitura de PDF confiável aqui = extrair texto com `pypdf` via `exec`, não depender do plugin `pdf` nativo (que falha no anexo `media://`).
+- Lição 3: o gateway roda sob supervisor `server.mjs` (wrapper Hostinger), **não** systemd. Restart manual fora dessa árvore derruba plugins (ex.: browser) e tira o autorestart. Realinhar sob `server.mjs` (ou restart do container) conserta.
+- Regra reforçada pelo Felipe: **usar o Obsidian como segundo cérebro de verdade** — gravar incidentes/decisões no vault na hora, não só no MEMORY.md.
