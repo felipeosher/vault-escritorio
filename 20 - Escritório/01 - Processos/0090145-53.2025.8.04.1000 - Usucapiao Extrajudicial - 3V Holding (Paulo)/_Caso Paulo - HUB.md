@@ -27,10 +27,10 @@ Felipe regularizou uma área no Tarumã para o **Paulo (3V Holding)** via usucap
 | [[Resumo - Processo 0150438-52.2026.8.04.1000 (Acao de Fraude)]] | Ação de nulidade c/c cancelamento de registro + dano moral | 🔴 Defesa | **Liminar de bloqueio DEFERIDA (18/06/2026)** |
 
 ## 🧭 Notas de trabalho
+- [[Caso Paulo - Memorial Agravo v2 (completo)]] — ⭐ **MEMORIAL DEFINITIVO** — 15 pontos (9 originais + 6 novos), o documento de referência da defesa
 - [[Caso Paulo - Agravo de Instrumento (peça pronta)]] — ✅ **PEÇA REDIGIDA E ASSINADA** (Felipe + Thaís) — pronta para protocolo
-- [[Caso Paulo - Agravo de Instrumento (peça pronta)]] — ✅ **peça FINAL escrita e assinada** (pronta para protocolo)
 - [[Caso Paulo - Munição extra (pontos novos)]] — 🔥 **pontos NOVOS** tirados dos documentos da própria autora (estoppel, posse x propriedade, residência dupla)
-- [[Caso Paulo - Memorial Agravo de Instrumento]] — ⚔️ **munição do agravo** (9 pontos + contradições da autora)
+- [[Caso Paulo - Memorial Agravo de Instrumento]] — ⚔️ munição original do agravo (9 pontos)
 - [[Caso Paulo - Estratégia de defesa]] — teses, pontos fortes/fracos, movimentos
 - [[Caso Paulo - Prazos e próximos passos]] — o que fazer agora ⏱️
 - [[Caso Paulo - Linha do tempo]] — cronologia unificada dos dois processos
@@ -48,7 +48,6 @@ Felipe regularizou uma área no Tarumã para o **Paulo (3V Holding)** via usucap
 - PDF: `Processo 0090145-53.2025.8.04.1000 - export PROJUDI 2026-06-21.pdf` (regularização, 137 págs)
 - PDF: `Processo 0150438-52.2026.8.04.1000 - Acao de Nulidade (Fraude) - Marilene x 3V Holding.pdf` (354 págs)
 - PDF: `Memorial Juridico - Agravo de Instrumento (efeito suspensivo).pdf` (4 págs)
-- DOCX: `Agravo de Instrumento - 3V Holding e Paulo (peça para protocolo).docx` (peça final assinada)
 - DOCX: `Agravo de Instrumento - 3V Holding e Paulo (peça para protocolo).docx` (peça final assinada)
 
 ## 🧠 Memória do Bench
