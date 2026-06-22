@@ -29,6 +29,7 @@ Felipe regularizou uma área no Tarumã para o **Paulo (3V Holding)** via usucap
 ## 🧭 Notas de trabalho
 - [[Caso Paulo - Agravo de Instrumento (peça pronta)]] — ✅ **PEÇA REDIGIDA E ASSINADA** (Felipe + Thaís) — pronta para protocolo
 - [[Caso Paulo - Agravo de Instrumento (peça pronta)]] — ✅ **peça FINAL escrita e assinada** (pronta para protocolo)
+- [[Caso Paulo - Munição extra (pontos novos)]] — 🔥 **pontos NOVOS** tirados dos documentos da própria autora (estoppel, posse x propriedade, residência dupla)
 - [[Caso Paulo - Memorial Agravo de Instrumento]] — ⚔️ **munição do agravo** (9 pontos + contradições da autora)
 - [[Caso Paulo - Estratégia de defesa]] — teses, pontos fortes/fracos, movimentos
 - [[Caso Paulo - Prazos e próximos passos]] — o que fazer agora ⏱️
