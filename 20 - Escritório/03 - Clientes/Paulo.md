@@ -15,7 +15,11 @@ atualizado: 2026-06-21
 - **Caso de fraude (em aberto):** [[Caso Paulo - Tentativa de fraude pós-regularização]]
 
 ## Quem é
+- **Nome completo:** Paulo Vitor Vieira Valença
 - **Paulo é o dono da 3V Holding Participações Ltda** (CNPJ 37.578.132/0001-05).
+- RG 255144682 SSP/AM. CPF: 518.550.702-00 (assim consta no BO) — atenção: na inicial da ação de fraude consta 816.550.702-00; **conferir o CPF correto**.
+- Casado sob comunhão parcial de bens com **Elma Vieira Costa**.
+- Endereço (conforme inicial): Rua Madrid, nº 15, Quadra 7, Conjunto Dourado/Conjunto Dom Pedro, Manaus/AM.
 - Cliente do escritório. Felipe regularizou a área dele (regularização fundiária / usucapião extrajudicial).
 - Contato: _(a preencher)_
 - Documentos: _(a preencher)_

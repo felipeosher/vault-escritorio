@@ -1,9 +1,9 @@
 ---
 tipo: caso
 cliente: Paulo (3V Holding Participações Ltda)
-status: EM ABERTO — aguardando processo de fraude e pontos críticos (via WhatsApp)
+status: ATIVO — ação de nulidade ajuizada; LIMINAR DEFERIDA contra a 3V (bloqueio da matrícula); prazo de defesa correndo
 criado: 2026-06-21
-lado_escritorio: defesa da 3V Holding / Paulo (vítima da tentativa de golpe)
+lado_escritorio: defesa da 3V Holding / Paulo
 ---
 
 # Caso Paulo — Tentativa de fraude pós-regularização
@@ -11,6 +11,7 @@ lado_escritorio: defesa da 3V Holding / Paulo (vítima da tentativa de golpe)
 ## Conexões
 - **Cliente:** [[Paulo]]
 - **Processo de regularização (base):** [[Resumo - Processo 0090145-53.2025.8.04.1000]]
+- **Ação de fraude (contra a 3V):** [[Resumo - Processo 0150438-52.2026.8.04.1000 (Acao de Fraude)]]
 
 ## O que está acontecendo (versão do cliente/Felipe)
 1. **Paulo é dono da 3V Holding.** Felipe fez toda a **regularização fundiária** da área dele (usucapião extrajudicial, Proc. 0090145-53.2025.8.04.1000, no Tarumã/Manaus). Resultado favorável — dúvida registral julgada improcedente, área regularizada.
@@ -23,12 +24,11 @@ lado_escritorio: defesa da 3V Holding / Paulo (vítima da tentativa de golpe)
 - Suspeita de falsificação por parte do advogado da vendedora — apurar.
 
 ## Pendências (o que falta chegar)
-- [ ] **Processo de fraude** que o advogado da vendedora ajuizou — Felipe vai enviar pelo WhatsApp.
-- [ ] **Pontos críticos de fraude** que Felipe já identificou — também via WhatsApp.
+- [x] **Processo de fraude** recebido e analisado (Proc. 0150438-52.2026.8.04.1000) — ver [[Resumo - Processo 0150438-52.2026.8.04.1000 (Acao de Fraude)]].
+- [ ] **Pontos críticos de fraude** que Felipe identificou — Felipe vai enviar pelo WhatsApp.
 
 ## Próximos passos (Bench)
-Quando os arquivos chegarem:
-1. Extrair e ler o processo de fraude na íntegra.
-2. Cruzar com o processo de regularização (timeline: quando regularizou x quando surgiu a alegação).
-3. Confrontar com os pontos críticos de fraude apontados por Felipe.
-4. Montar análise da defesa / contra-ataque (incl. possível falsificação documental e má-fé).
+1. [x] Ler o processo de fraude na íntegra (354 págs).
+2. [ ] Receber e confrontar os pontos críticos de fraude apontados por Felipe.
+3. [ ] Montar a peça de defesa / pedido de reconsideração da liminar.
+4. [ ] Avaliar contra-ataque por má-fé / denunciação caluniosa, se cabível.
