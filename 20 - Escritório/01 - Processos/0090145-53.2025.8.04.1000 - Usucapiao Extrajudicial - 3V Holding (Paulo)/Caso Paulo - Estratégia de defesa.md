@@ -45,5 +45,17 @@ A regularização foi **legítima e chancelada pelo Estado**. A ação de nulida
 5. Quem são os confinantes Naniel Lopes Martins e Edson Marques dos Santos? Relação com o imóvel?
 6. A área estava ocupada por ela quando você comprou? Como se deu a posse depois?
 
-## 📝 A cruzar com os pontos críticos do Felipe
-_(aguardando Felipe enviar os pontos de fraude que identificou — atualizar aqui)_
+## 🧨 Munição do Memorial (pontos críticos do Felipe — JÁ RECEBIDOS)
+> Detalhe completo em [[Caso Paulo - Memorial Agravo de Instrumento]]. As contradições abaixo saem dos **próprios documentos da autora** — é o ponto mais letal.
+
+**Contradições nos documentos dela:**
+1. **Residência (derruba o periculum):** a inicial diz que ela mora no imóvel da lide (Rua Peter Drucker, 61) há ~40 anos, mas a **procuração assinada por ela** declara residência na **Rua Guapirama, 62, Cidade Nova**. A urgência da liminar se apoiou em "idosa que reside no local" — premissa falsa.
+2. **"Surpresa" inverossímil:** litiga sobre a área desde **2022**, processo SECT desde 2025, edital público, sentença publicada no DJEN em **16/02/2026**. O **B.O. foi lavrado em 27/05/2026 — DOIS DIAS APÓS o ajuizamento** (25/05) e pelo próprio advogado. Não há fato-surpresa.
+3. **Autocontradição na origem:** o **Parecer SECT que ELA juntou** (mov. 1.11) afirma "reconhece-se a origem particular legítima da matrícula nº 7.879". O anexo dela derruba a tese de cadeia forjada.
+4. Divergências de qualificação (CPF do réu, datas de nascimento) — entram como **reforço, nunca como pilar**.
+
+**Pilares jurídicos do agravo (sólidos, documentais):**
+- **Chancela judicial anterior:** a dúvida registral já foi julgada improcedente pela Vara especializada (com MP + anuência do Estado). A liminar do juízo cível comum colide com ela.
+- **Firma reconhecida (art. 429, I, CPC):** o ônus de provar a falsidade é da autora. A liminar inverteu isso, extraindo fumus de mera afirmação unilateral.
+- **Quitação no próprio contrato:** não cabe presumir o não-pagamento em cognição sumária.
+- **Medida menos gravosa:** averbação da existência da ação (art. 167, I, "21", LRP) protege o resultado útil sem imobilizar o bem — pedido subsidiário.

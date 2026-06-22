@@ -10,9 +10,15 @@ status: liminar deferida — prazo de contestação em curso
 > Painel de ação. Volta ao [[_Caso Paulo - HUB]].
 
 ## ⏱️ Prazos críticos
-- [ ] **Confirmar data da CITAÇÃO** da 3V/Paulo → dispara **15 dias úteis** para contestar. (Decisão de 18/06/2026; intimação aguardando publicação no DJEN.)
-- [ ] Avaliar **Agravo de Instrumento** contra a liminar de bloqueio (prazo 15 dias da intimação da decisão).
+- [ ] **AGRAVO DE INSTRUMENTO** contra a liminar de bloqueio (mov. 7.1, 18/06/2026) — prazo **15 dias** da intimação. **Memorial já montado** → ver [[Caso Paulo - Memorial Agravo de Instrumento]]. É o movimento mais urgente: libera o imóvel.
+- [ ] **Confirmar data da CITAÇÃO/intimação** da 3V/Paulo → dispara o prazo do agravo E os **15 dias úteis** da contestação. (Intimação aguardava publicação no DJEN.)
 - [ ] Acompanhar **vista ao MP** (art. 178 CPC) e eventual manifestação.
+
+## 📑 Antes de protocolar o agravo (notas do Memorial)
+- [ ] **Exibir o contrato com firma reconhecida + cláusula de quitação** nos autos — sustentam os pontos 3 e 4 do agravo.
+- [ ] Preencher na minuta: **data de ciência**, **valor/guia de preparo**, **endereço profissional**.
+- [ ] Verificar itens marcados "a verificar" (idade/CPF da autora) — entram como reforço, **nunca como pilar**.
+- [ ] ⚠️ **Cessão de direitos (20%+20%) ainda não registrada** — não entra no agravo, mas é vulnerabilidade de oponibilidade a terceiros; resolver por escritura/averbação em momento próprio.
 
 ## 📋 Documentos a reunir com o Paulo (prova material)
 - [ ] **Contrato de Compra e Venda e Cessão de Posse** original (08/04/2024) com **firma reconhecida**.

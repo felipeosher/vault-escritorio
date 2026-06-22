@@ -18,11 +18,13 @@ criado: 2026-06-21
 2. **A área não valia nada antes de ser regularizada.** Depois que o Felipe regularizou e ela passou a valer, **apareceu um advogado da mulher que vendeu a área pro Paulo**, alegando **fraude**.
 3. Felipe classifica esse advogado como **falsificador** e a manobra como **golpe/tentativa de fraude** oportunista — surgiu "incrivelmente" logo após a regularização concluída.
 4. **O processo de fraude chegou e foi analisado (21/06/2026):** ação 0150438-52.2026.8.04.1000 (15ª Vara Cível), autora **Marilene Coelho Fontinelli** (idosa, 69), adv. **Daniel Rocha Nóbrega** (OAB/AM 10.626 — o tal "falsificador"). Pede nulidade do contrato/ata de usucapião, cancelamento da matrícula 81.951 e dano moral de R$ 100k. **Liminar de bloqueio da matrícula 81.951 JÁ DEFERIDA em 18/06/2026.** Réus: 3V Holding **e Paulo Vitor pessoalmente**. BO de falsidade ideológica contra Paulo. Análise completa no HUB.
-5. **Pendente do Felipe:** enviar os **pontos críticos de fraude** que ele identificou (para fechar a estratégia de defesa).
+5. **Memorial Jurídico (pontos críticos do Felipe) chegou e foi integrado (21/06/2026):** é a munição de um **Agravo de Instrumento com pedido de efeito suspensivo** contra a liminar de bloqueio. 9 pontos atacando fumus+periculum, sem discutir o mérito da nulidade. Destaques fortes: (a) chancela judicial anterior (sentença transitada na Vara de Reg. Públicos sobre a mesma matrícula); (b) firma reconhecida → ônus da falsidade é da autora (art. 429, I, CPC); (c) **contradição da residência** — a procuração da própria autora a declara residente na Rua Guapirama, 62, Cidade Nova, NÃO no imóvel da lide → esvazia o periculum; (d) B.O. lavrado 2 dias DEPOIS do ajuizamento; (e) parecer SECT juntado por ela reconhece origem legítima da matrícula-mãe 7.879. Pedido subsidiário: trocar bloqueio total por averbação da ação. Detalhe em [[Caso Paulo - Memorial Agravo de Instrumento]].
 
 ## Estado atual (21/06/2026)
-- Os dois processos estão no vault, com análise. Estrutura navegável montada (HUB + linha do tempo + prazos + estratégia + fichas de pessoas).
-- **Falta:** receber os pontos críticos de fraude do Felipe e cruzar com a análise; confirmar data de citação (dispara prazo de 15 dias úteis da contestação).
+- Os dois processos + o Memorial do agravo estão no vault, com análise. Estrutura navegável montada (HUB + linha do tempo + prazos + estratégia + Memorial + fichas de pessoas).
+- **Movimento mais urgente:** protocolar o **Agravo de Instrumento** (prazo 15 dias da intimação da decisão de 18/06). Antes de protocolar: exibir contrato c/ firma reconhecida + cláusula de quitação; preencher data de ciência, preparo e endereço na minuta.
+- ⚠️ **Vulnerabilidade conhecida:** cessão de direitos (20%+20%) ainda não registrada — tratar por escritura/averbação em momento próprio (fora do agravo).
+- **Falta:** confirmar data de citação/intimação (dispara prazo do agravo e dos 15 dias úteis da contestação).
 - Lembrete técnico: PDF de 57MB do processo de fraude está acima do limite do GitHub — montar Git LFS no vault antes que trave o sync.
 
 ## Conexões
