@@ -2,7 +2,7 @@
 tipo: acoes
 caso: Paulo / 3V Holding
 atualizado: 2026-06-21
-status: liminar deferida — prazo de contestação em curso
+status: liminar deferida — AGRAVO REDIGIDO, pronto para protocolo
 ---
 
 # Caso Paulo — Prazos e próximos passos
@@ -10,7 +10,8 @@ status: liminar deferida — prazo de contestação em curso
 > Painel de ação. Volta ao [[_Caso Paulo - HUB]].
 
 ## ⏱️ Prazos críticos
-- [ ] **AGRAVO DE INSTRUMENTO** contra a liminar de bloqueio (mov. 7.1, 18/06/2026) — prazo **15 dias** da intimação. **Memorial já montado** → ver [[Caso Paulo - Memorial Agravo de Instrumento]]. É o movimento mais urgente: libera o imóvel.
+- [ ] **AGRAVO DE INSTRUMENTO** contra a liminar de bloqueio (mov. 7.1, 18/06/2026) — prazo **15 dias** da intimação. ✅ **PEÇA JÁ REDIGIDA E ASSINADA** (Felipe + Thaís) → ver [[Caso Paulo - Agravo de Instrumento (peça pronta)]]. Falta só finalizar pendências e **protocolar**. É o movimento mais urgente: libera o imóvel.
+- [ ] Munição da peça: [[Caso Paulo - Memorial Agravo de Instrumento]] (9 pontos + contradições).
 - [ ] **Confirmar data da CITAÇÃO/intimação** da 3V/Paulo → dispara o prazo do agravo E os **15 dias úteis** da contestação. (Intimação aguardava publicação no DJEN.)
 - [ ] Acompanhar **vista ao MP** (art. 178 CPC) e eventual manifestação.
 
@@ -41,4 +42,5 @@ status: liminar deferida — prazo de contestação em curso
 6. Mapear risco da **perícia grafotécnica** antes que vire surpresa (se assinatura é autêntica, a perícia é nossa aliada).
 
 ## 📨 Pendência de Felipe
-- [ ] Felipe vai mandar os **pontos críticos de fraude** que ele já identificou — cruzar com esta análise e fechar a estratégia.
+- [x] ~~Felipe vai mandar os pontos críticos de fraude~~ — chegaram via Memorial + Agravo (21/06/2026), já integrados.
+- [ ] Confirmar a **data de ciência da decisão** para preencher na minuta e calcular o prazo fatal do agravo.
