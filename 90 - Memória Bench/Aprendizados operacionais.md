@@ -1,5 +1,13 @@
 # Aprendizados operacionais
 
+## 2026-06-22 — Incidente Claude/claudemax: API key desativada
+
+- Sintoma: respostas falhando quando o modelo selecionado era Claude/claudemax.
+- Diagnóstico nos logs: rota `anthropic/*` retornando 401 `authentication_error` com mensagem `API key disabled`.
+- O perfil `anthropic:claude-cli` existia como alternativa, mas o OAuth estava expirado desde 2026-06-21.
+- Mitigação aplicada: padrão temporário do OpenClaw alterado para `codex/gpt-5.5`; fallback reduzido para `google/gemini-2.5-flash`; gateway reiniciado manualmente porque systemd user não está instalado nesta VPS.
+- Para restaurar Claude como padrão: reativar/renovar a chave claudemax ou renovar Claude CLI OAuth, testar, e só então voltar o primary para `anthropic/claude-opus-4.8`.
+
 Pontos importantes que o Bench descobriu junto com o Felipe. Atualizo conforme aprendemos.
 
 ## Google Workspace via `gog` (2026-06-21)
