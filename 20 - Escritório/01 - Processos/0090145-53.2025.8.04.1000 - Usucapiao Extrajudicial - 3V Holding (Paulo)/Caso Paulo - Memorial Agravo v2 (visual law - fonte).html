@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Memorial - Caso Paulo / 3V Holding</title>
+<style>
+  /* Margens da PÁGINA reservam a zona segura do timbre em TODAS as folhas.
+     topo 33mm (abaixo do logo) · base 32mm (acima do rodapé)
+     esq 18mm (depois da barra) · dir 15mm (antes do filete) */
+  @page {
+    size: A4;
+    margin: 36mm 16mm 40mm 18mm;
+  }
+
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 11pt;
+    color: #1a1a1a;
+    line-height: 1.45;
+    text-align: justify;
+  }
+
+  /* Timbre é carimbado por baixo via PyMuPDF, não no HTML. */
+  /* ===== Tipografia de títulos / visual law ===== */
+  h1, h2, h3, .badge, .box-title, .doc-head, table th, .timeline-date, .pedido-num {
+    font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
+  }
+
+  .doc-head {
+    text-align: center;
+    color: #16203C;
+    border-bottom: 3px solid #E8B53A;
+    padding-bottom: 6px;
+    margin-bottom: 14px;
+  }
+  .doc-head .kicker {
+    font-size: 9pt;
+    letter-spacing: 2px;
+    color: #E8B53A;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .doc-head h1 {
+    font-size: 17pt;
+    margin: 4px 0 2px;
+    color: #16203C;
+    letter-spacing: 0.5px;
+  }
+  .doc-head .sub {
+    font-size: 9.5pt;
+    color: #444;
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+  }
+
+  h2.section {
+    font-size: 12.5pt;
+    color: #fff;
+    background: #16203C;
+    padding: 6px 12px;
+    border-left: 6px solid #E8B53A;
+    margin: 18px 0 10px;
+    letter-spacing: 0.5px;
+  }
+
+  p { margin: 6px 0; }
+
+  /* ===== Tese central (box destaque) ===== */
+  .tese {
+    background: #f4f6fb;
+    border: 1px solid #16203C;
+    border-left: 8px solid #E8B53A;
+    padding: 12px 16px;
+    margin: 10px 0 4px;
+    border-radius: 3px;
+    page-break-inside: avoid;
+  }
+  .tese .box-title {
+    color: #16203C;
+    font-weight: 700;
+    font-size: 11pt;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  /* ===== Tabelas ===== */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 10pt;
+  }
+  table.quadro { page-break-inside: avoid; }
+  tr { page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  table th {
+    background: #16203C;
+    color: #fff;
+    text-align: left;
+    padding: 7px 9px;
+    font-size: 9.5pt;
+    letter-spacing: 0.4px;
+    border: 1px solid #16203C;
+  }
+  table td {
+    padding: 6px 9px;
+    border: 1px solid #b9c2d6;
+    vertical-align: top;
+  }
+  table tr:nth-child(even) td { background: #f4f6fb; }
+  table.quadro td:first-child {
+    font-weight: 700;
+    color: #16203C;
+    width: 28%;
+    background: #eef1f8;
+  }
+
+  /* ===== Badges dos blocos ===== */
+  .badge {
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 10pt;
+    padding: 3px 12px;
+    border-radius: 14px;
+    letter-spacing: 1px;
+    margin-right: 8px;
+  }
+  .badge-a { background: #16203C; }
+  .badge-b { background: #1f6f54; }
+  .badge-c { background: #9c2b2b; }
+
+  .block-head {
+    margin: 20px 0 8px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #E8B53A;
+    page-break-after: avoid;
+  }
+  .block-head .block-title {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 12pt;
+    font-weight: 700;
+    color: #16203C;
+  }
+
+  /* ===== Itens dos blocos ===== */
+  .item {
+    margin: 9px 0;
+    padding: 8px 10px 8px 12px;
+    border-left: 4px solid #b9c2d6;
+    background: #fafbfe;
+    border-radius: 2px;
+    page-break-inside: avoid;
+  }
+  .item .tag {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 700;
+    color: #16203C;
+    font-size: 10pt;
+  }
+  .item.letal { border-left: 4px solid #9c2b2b; background: #fdf3f3; }
+  .item.letal .tag { color: #9c2b2b; }
+  .item.muito-letal { border-left: 6px solid #9c2b2b; background: #fbe9e9; }
+
+  .chip {
+    display: inline-block;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 7.5pt;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 1px 7px;
+    border-radius: 10px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .chip-letal { background: #9c2b2b; color: #fff; }
+  .chip-max { background: #E8B53A; color: #16203C; }
+
+  /* ===== Linha do tempo ===== */
+  .timeline { margin: 10px 0; border-left: 3px solid #16203C; }
+  .tl-item {
+    position: relative;
+    padding: 5px 0 5px 16px;
+    border-bottom: 1px dashed #c8d0e0;
+    page-break-inside: avoid;
+  }
+  .tl-item:before {
+    content: "";
+    position: absolute;
+    left: -7px; top: 9px;
+    width: 9px; height: 9px;
+    background: #E8B53A;
+    border: 2px solid #16203C;
+    border-radius: 50%;
+  }
+  .tl-item .timeline-date {
+    color: #16203C;
+    font-weight: 700;
+    font-size: 9.5pt;
+    margin-right: 6px;
+  }
+  .tl-item.highlight { background: #f4f6fb; }
+  .tl-item.highlight:before { background: #9c2b2b; }
+
+  /* ===== Pedidos ===== */
+  .pedido {
+    display: flex;
+    align-items: flex-start;
+    margin: 8px 0;
+    background: #f4f6fb;
+    border: 1px solid #b9c2d6;
+    border-radius: 3px;
+    padding: 8px 10px;
+    page-break-inside: avoid;
+  }
+  .pedido-num {
+    flex: 0 0 auto;
+    background: #16203C;
+    color: #fff;
+    font-weight: 700;
+    width: 24px; height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 10pt;
+  }
+  .pedido.principal { border-left: 6px solid #E8B53A; }
+  .pedido .ped-label {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 700;
+    color: #16203C;
+  }
+
+  .footnote { font-size: 8.5pt; color: #666; font-style: italic; margin-top: 4px; }
+  strong { color: #16203C; }
+  .red { color: #9c2b2b; font-weight: 700; }
+</style>
+</head>
+<body>
+
+
+<div class="doc-head">
+  <div class="kicker">Memorial · Agravo de Instrumento</div>
+  <h1>Caso Paulo · 3V Holding</h1>
+  <div class="sub">Bloqueio da Matrícula 81.951 (3º Ofício RI) — Tarumã/AM</div>
+</div>
+
+<div class="tese">
+  <span class="box-title">Tese Central</span>
+  <p>O título dos Agravantes não nasceu de fraude "silenciosa": nasceu do procedimento
+  mais público que existe — <strong>edital sem impugnação</strong>, <strong>anuência do
+  Estado</strong>, <strong>parecer do MP</strong> e <strong>sentença que julgou improcedente
+  a dúvida</strong>. A liminar contraria decisão judicial anterior sobre a mesma matrícula,
+  inverte o ônus da prova da falsidade e se apoia em uma premissa fática (residência)
+  desmentida pelos próprios documentos da Agravada. A narrativa de "fraude na cadeia de
+  origem" é contraditada, por escrito, pelo próprio advogado da autora.</p>
+</div>
+
+<h2 class="section">Quadro do Caso</h2>
+<table class="quadro">
+  <tr><td>Agravantes (réus)</td><td>3V Holding Participações Ltda (CNPJ 37.578.132/0001-05) e Paulo Vitor Vieira Valença</td></tr>
+  <tr><td>Agravada (autora)</td><td>Marilene Coelho Fontinelli — adv. Daniel Rocha Nóbrega (OAB/AM 10.626)</td></tr>
+  <tr><td>Imóvel</td><td>Rua Peter Drucker, nº 61, Tarumã — Matrícula 81.951 (3º Ofício RI), derivada da matrícula-mãe 7.879</td></tr>
+  <tr><td>Decisão agravada</td><td>mov. 7.1, 18/06/2026 — bloqueio <strong>TOTAL</strong> da 81.951 + anotação de impedimento na 7.879</td></tr>
+  <tr><td>Ação de origem</td><td>Declaratória de Nulidade c/c Cancelamento de Registro + Danos Morais (0150438-52.2026.8.04.1000)</td></tr>
+  <tr><td>Título dos Agravantes</td><td>Usucapião extrajudicial — Prenotação 144.008 — chancelado por sentença na suscitação de dúvida 0090145-53.2025.8.04.1000</td></tr>
+</table>
+
+<div class="block-head">
+  <span class="badge badge-a">BLOCO A</span>
+  <span class="block-title">Ausência de <em>Fumus Boni Iuris</em></span>
+</div>
+
+<div class="item">
+  <span class="tag">A.1 — Procedimento o mais público possível.</span>
+  Art. 216-A, §§3º e 4º, Lei 6.015/73. Ata notarial com originais conferidos pela Tabeliã,
+  planta e memorial georreferenciados com ART, certidões, edital a terceiros sem impugnação
+  e ciência aos entes públicos.
+</div>
+
+<div class="item">
+  <span class="tag">A.2 — Chancela judicial anterior.</span>
+  Sentença de 09/02/2026 (mov. 52.1 dos autos 0090145-53) — dúvida <strong>JULGADA
+  IMPROCEDENTE</strong>, em consonância com o parecer do MP e com anuência expressa do
+  Estado do Amazonas. A liminar do juízo cível comum colide com decisão da Vara especializada.
+</div>
+
+<div class="item">
+  <span class="tag">A.3 — Firma reconhecida → ônus da falsidade é da autora.</span>
+  Art. 429, I, CPC. O contrato tem firma reconhecida. A liminar inverteu o ônus sem início
+  de prova pericial.
+</div>
+
+<div class="item">
+  <span class="tag">A.4 — Pagamento.</span>
+  A quitação consta do próprio instrumento. Não é lícito presumir inexistência do pagamento
+  em cognição sumária.
+</div>
+
+<div class="item">
+  <span class="tag">A.5 — As reduções de área são rigor, não fraude.</span>
+  Área reduzida para excluir sobreposição com terras públicas, por exigência do Estado e do
+  juízo registral.
+</div>
+
+<div class="item muito-letal">
+  <span class="tag">A.6 — Autocontradição dominial</span>
+  <span class="chip chip-max">ponto mais letal</span><br>
+  Na inicial, o patrono acusa a 3V de ter "forjado" a cadeia de origem. Mas em petição à
+  SECT de 24/07/2025 (mov. 1.7, pp. 54-56), ele mesmo descreve essa mesma cadeia como
+  <strong>"legítimas e ininterruptas"</strong>, <strong>"regularmente inscritas"</strong>,
+  com <strong>"estabilidade dominial"</strong>.
+  <div class="footnote">Cadeia: Estado → Geraldo Frederico Gidy (mat. 4700) → Moisés Alves de
+  Souza (mat. 5697) → Camilo Ferrari e Braulino Saraiva (mat. 7879) → Marilene
+  (compra em 05/03/1985, Cr$ 10.000.000,00).</div>
+</div>
+
+<div class="item letal">
+  <span class="tag">A.7 — Data cronologicamente impossível</span>
+  <span class="chip chip-letal">letal</span><br>
+  A inicial pede nulidade de contrato "datado de 13/09/1982". Mas a matrícula 7.879 só
+  nasceu em 03/09/1981 e a aquisição da Marilene foi em 05/03/1985. A data "1982" não se
+  encaixa em nenhuma ponta da cronologia que ela mesma documentou.
+</div>
+
+<div class="item letal">
+  <span class="tag">A.8 — "Proprietária" que confessa ser mera possuidora</span>
+  <span class="chip chip-letal">letal</span><br>
+  A inicial fala em "proprietária usurpada". Mas em todos os documentos ela se intitula
+  <strong>"legítima possuidora"</strong> buscando <strong>"regularização fundiária"</strong>
+  — nunca registrou domínio.
+</div>
+
+<div class="item letal">
+  <span class="tag">A.9 — Autocontradição sobre origem pública/particular da 7.879</span>
+  <span class="chip chip-letal">letal</span><br>
+  Parecer SECT (mov. 1.11) que ela juntou afirma que o imóvel dela está "inserido
+  integralmente na Gleba Florestal (mat. 29.068), do Estado". Quem resolveu a sobreposição
+  foi a 3V (renunciando à parcela pública e obtendo sentença); a autora nunca resolveu.
+</div>
+
+<div class="item letal">
+  <span class="tag">A.10 — A prioridade registral que ela invoca hoje protege os Agravantes</span>
+  <span class="chip chip-letal">letal</span><br>
+  Perante a SECT ela invoca art. 186 LRP (prevalece o registro anterior). Mas hoje quem
+  ostenta registro é a 3V (matrícula 81.951). O argumento dela virado contra ela.
+</div>
+
+<div class="block-head">
+  <span class="badge badge-b">BLOCO B</span>
+  <span class="block-title">Ausência de <em>Periculum in Mora</em></span>
+</div>
+
+<div class="item letal">
+  <span class="tag">B.1 — A própria procuração da autora desmente que ela resida no imóvel</span>
+  <span class="chip chip-letal">letal</span><br>
+  A decisão apoiou a urgência na "idosa que reside no local". Mas a procuração (mov. 1.2) e
+  petições SECT declaram residência na <strong>Rua Guapirama, nº 62, Cidade Nova</strong> —
+  NÃO na Rua Peter Drucker, nº 61. Endereço repete-se em três documentos da própria parte.
+  Sem a premissa de moradia, esvazia-se o periculum.
+</div>
+
+<div class="item">
+  <span class="tag">B.2 — A "surpresa" é inverossímil; o B.O. é posterior ao ajuizamento.</span>
+  Litiga sobre a área desde 2022. O usucapião teve edital público. O B.O. nº 00161667/2026
+  foi registrado em 27/05/2026 — <strong>dois dias APÓS</strong> o ajuizamento (25/05/2026) —
+  e pelo próprio advogado como comunicante.
+</div>
+
+<div class="item">
+  <span class="tag">B.3 — Há medida menos gravosa.</span>
+  Averbação da existência da ação (art. 167, I, "21", Lei 6.015/73) em vez de bloqueio total.
+</div>
+
+<div class="block-head">
+  <span class="badge badge-c">BLOCO C</span>
+  <span class="block-title">Dano aos Agravantes + Má-fé</span>
+</div>
+
+<div class="item">
+  <span class="tag">C.1 — Dano grave e de difícil reparação.</span>
+  Bloqueio total, indefinido e inaudita altera parte paralisa negócio em curso.
+</div>
+
+<div class="item letal">
+  <span class="tag">C.2 — Litigância de má-fé do patrono adverso (art. 80, I e II, CPC).</span><br>
+  Conduta do escritório adverso que alterou a verdade dos fatos (A.6, A.7, A.9).
+  <div class="footnote red">Cautela: mirar a conduta processual, não a idosa.</div>
+</div>
+
+<h2 class="section">Tabela de Contradições da Autora</h2>
+<table>
+  <tr>
+    <th style="width:16%">Tema</th>
+    <th style="width:30%">O que a INICIAL afirma</th>
+    <th style="width:38%">O que os DOCUMENTOS DELA revelam</th>
+    <th style="width:16%">Ref.</th>
+  </tr>
+  <tr>
+    <td><strong>Cadeia de origem</strong></td>
+    <td>A 3V "forjou" a cadeia</td>
+    <td>Adv. dela descreve MESMA cadeia como "legítima e ininterrupta"</td>
+    <td>mov. 1.7 (pp. 54-56)</td>
+  </tr>
+  <tr>
+    <td><strong>Data do contrato</strong></td>
+    <td>Nulidade de contrato "de 13/09/1982"</td>
+    <td>Aquisição dela é de 05/03/1985; mat. 7.879 nasce em 03/09/1981</td>
+    <td>inicial × mov. 1.7</td>
+  </tr>
+  <tr>
+    <td><strong>Condição</strong></td>
+    <td>"Proprietária" usurpada</td>
+    <td>"Legítima possuidora" buscando "regularização" (nunca registrou)</td>
+    <td>petições SECT</td>
+  </tr>
+  <tr>
+    <td><strong>Origem da área</strong></td>
+    <td>Domínio incontestável há 41 anos</td>
+    <td>Parecer SECT: área "integralmente na Gleba do Estado" (29.068)</td>
+    <td>mov. 1.11</td>
+  </tr>
+  <tr>
+    <td><strong>Residência</strong></td>
+    <td>Reside no imóvel (Peter Drucker, 61)</td>
+    <td>Procuração + SECT: reside na Guapirama, 62, Cidade Nova</td>
+    <td>mov. 1.2 / 1.7</td>
+  </tr>
+  <tr>
+    <td><strong>"Surpresa"</strong></td>
+    <td>Surpreendida em 15/05/2026</td>
+    <td>Litiga desde 2022; sentença publicada 16/02/2026; BO 2 dias após ajuizar</td>
+    <td>cronologia</td>
+  </tr>
+  <tr>
+    <td><strong>Prioridade registral</strong></td>
+    <td>(silencia)</td>
+    <td>Ela mesma invoca art. 186 LRP — que hoje favorece o registro da 3V</td>
+    <td>petição SECT</td>
+  </tr>
+</table>
+
+<h2 class="section">Linha do Tempo</h2>
+<div class="timeline">
+  <div class="tl-item"><span class="timeline-date">24/04/1900</span> Título definitivo do Estado → base da matrícula-mãe 4700</div>
+  <div class="tl-item"><span class="timeline-date">01/02/1979</span> Registro matrícula 4700 (Geraldo F. Gidy)</div>
+  <div class="tl-item"><span class="timeline-date">20/10/1980</span> Desmembramento → matrícula 5697 (Moisés Alves)</div>
+  <div class="tl-item"><span class="timeline-date">03/09/1981</span> Dação → matrícula 7.879 (Camilo Ferrari/Braulino Saraiva)</div>
+  <div class="tl-item"><span class="timeline-date">05/03/1985</span> Marilene compra 20.000 m² de Camilo/Braulino (contrato particular, Cr$ 10 mi)</div>
+  <div class="tl-item"><span class="timeline-date">29/05/2002</span> Criação matrícula 29.068 (Gleba Florestal/Estado) — POSTERIOR à 7.879</div>
+  <div class="tl-item"><span class="timeline-date">2022</span> Marilene ajuíza ação 0671415-37.2022 (Vara Reg. Públicos)</div>
+  <div class="tl-item"><span class="timeline-date">08/04/2024</span> Contrato de C&V e Cessão de Posse (Marilene → 3V), R$ 800.000, firma reconhecida</div>
+  <div class="tl-item"><span class="timeline-date">04/06/2024</span> Prenotação 144.008 — início do usucapião extrajudicial</div>
+  <div class="tl-item"><span class="timeline-date">2024</span> Ata notarial + edital sem impugnação</div>
+  <div class="tl-item"><span class="timeline-date">28/02/2025</span> Estado manifesta sobreposição → suscitação de dúvida (0090145-53.2025)</div>
+  <div class="tl-item"><span class="timeline-date">2025</span> 3V renuncia à parcela sobreposta ao domínio público</div>
+  <div class="tl-item"><span class="timeline-date">15/12/2025</span> Parecer SECT: "reconhece-se a origem particular legítima da matrícula 7.879"</div>
+  <div class="tl-item highlight"><span class="timeline-date">09/02/2026</span> <strong>SENTENÇA: dúvida IMPROCEDENTE</strong>, com MP e anuência do Estado → abre matrícula 81.951</div>
+  <div class="tl-item"><span class="timeline-date">16/02/2026</span> Sentença publicada no DJEN</div>
+  <div class="tl-item highlight"><span class="timeline-date">24/07/2025</span> Petição SECT do adv. Daniel descrevendo a cadeia como legítima <span class="red">(CONTRADIÇÃO)</span></div>
+  <div class="tl-item"><span class="timeline-date">25/05/2026</span> Autora ajuíza a ação alegando "surpresa" em 15/05</div>
+  <div class="tl-item highlight"><span class="timeline-date">27/05/2026</span> Autora (via advogado) registra o B.O. — <strong>DEPOIS</strong> de ajuizar</div>
+  <div class="tl-item highlight"><span class="timeline-date">18/06/2026</span> Decisão agravada: bloqueio total da 81.951 + impedimento na 7.879</div>
+</div>
+
+<h2 class="section">Pedidos</h2>
+
+<div class="pedido principal">
+  <span class="pedido-num">1</span>
+  <span><span class="ped-label">Principal:</span> efeito suspensivo (art. 1.019, I) sustando a
+  liminar → libera a 81.951 e a 7.879.</span>
+</div>
+
+<div class="pedido">
+  <span class="pedido-num">2</span>
+  <span><span class="ped-label">Subsidiário:</span> substituir o bloqueio total pela averbação
+  da existência da ação (art. 167, I, "21", LRP).</span>
+</div>
+
+<div class="pedido">
+  <span class="pedido-num">3</span>
+  <span><span class="ped-label">Retratação:</span> comunicar o juízo a quo (art. 1.018) para
+  eventual reconsideração.</span>
+</div>
+
+<div class="pedido">
+  <span class="pedido-num">4</span>
+  <span><span class="ped-label">Operacional:</span> em caso de provimento/retratação, ofício
+  urgente ao 3º Ofício para baixa do bloqueio.</span>
+</div>
+
+<div class="pedido">
+  <span class="pedido-num">5</span>
+  <span><span class="ped-label">Mérito recursal:</span> provimento para revogar integralmente
+  a tutela.</span>
+</div>
+
+<div class="tese" style="margin-top:24px;">
+  <span class="box-title">Síntese</span>
+  <p>Título dos Agravantes formado à luz do dia, sob crivo do Estado, do MP e do Judiciário.
+  A liminar inverte o ônus da falsidade, colide com sentença anterior da Vara especializada
+  e se apoia em premissa de residência <strong>desmentida pelos próprios documentos da
+  autora</strong>. As contradições da inicial não são interpretativas: estão escritas, por
+  extenso, nas peças que a própria Agravada produziu.</p>
+</div>
+
+</body>
+</html>
