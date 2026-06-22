@@ -2,22 +2,27 @@
 tipo: cliente
 nome: Paulo
 status: cliente ativo
-vinculo: relacionado à 3V Holding Participações Ltda (a confirmar — sócio/representante)
+vinculo: dono da 3V Holding Participações Ltda
 criado: 2026-06-21
+atualizado: 2026-06-21
 ---
 
 # Paulo
 
 ## Conexões
-- **Processo:** [[Resumo - Processo 0090145-53.2025.8.04.1000]] (Usucapião Extrajudicial — 3V Holding)
+- **Empresa:** 3V Holding Participações Ltda (CNPJ 37.578.132/0001-05)
+- **Processo (regularização):** [[Resumo - Processo 0090145-53.2025.8.04.1000]] (Usucapião Extrajudicial — 3V Holding)
+- **Caso de fraude (em aberto):** [[Caso Paulo - Tentativa de fraude pós-regularização]]
 
-## Dados
-- Vínculo com a **3V Holding Participações Ltda** (CNPJ 37.578.132/0001-05) — confirmar se é sócio, administrador ou representante.
+## Quem é
+- **Paulo é o dono da 3V Holding Participações Ltda** (CNPJ 37.578.132/0001-05).
+- Cliente do escritório. Felipe regularizou a área dele (regularização fundiária / usucapião extrajudicial).
 - Contato: _(a preencher)_
 - Documentos: _(a preencher)_
 
 ## Processos / demandas
-- **Usucapião Extrajudicial** (Proc. 0090145-53.2025.8.04.1000) — área no Tarumã, Manaus. Dúvida registral julgada improcedente; resultado favorável; aguardando registro final no Cartório do 3º Ofício. Ver [[Resumo - Processo 0090145-53.2025.8.04.1000]].
+- **Usucapião Extrajudicial / Regularização** (Proc. 0090145-53.2025.8.04.1000) — área no Tarumã, Manaus. Regularização concluída por Felipe; dúvida registral julgada improcedente; resultado favorável; aguardando registro final no Cartório do 3º Ofício. Ver [[Resumo - Processo 0090145-53.2025.8.04.1000]].
+- **Caso de fraude (NOVO, em aberto):** ver [[Caso Paulo - Tentativa de fraude pós-regularização]].
 
 ## Observações
-- Cadastro criado a partir do processo de usucapião enviado por Felipe em 21/06/2026. Detalhes pessoais de Paulo e seu vínculo formal com a 3V Holding ainda a confirmar.
+- ⚠️ Quando Felipe disser "processo do Paulo", referir-se a ESTE cliente (dono da 3V Holding) e ao conjunto: regularização concluída + caso de fraude em aberto.
