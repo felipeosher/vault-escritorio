@@ -9,10 +9,18 @@ O Felipe pode ler e editar livremente. Eu leio de volta para manter continuidade
 
 - `00 - Índice da Memória` (esta nota): porta de entrada.
 - Notas por tema, criadas conforme necessário, ex.:
-  - `Preferências do Felipe.md`
-  - `Decisões.md`
-  - `Aprendizados operacionais.md`
+  - [[Preferências do Felipe]]
+  - [[Decisões]]
+  - [[Aprendizados operacionais]]
   - `Contexto de negócios.md`
+
+## Casos / clientes
+
+- [[Caso Paulo - 3V Holding]] — gatilho "processo do Paulo": regularização fundiária (usucapião 0090145-53.2025.8.04.1000) + tentativa de fraude pós-regularização. Aguardando processo de fraude e pontos críticos via WhatsApp.
+
+## Incidentes técnicos
+
+- [[Incidente claudemax 2026-06-21]] — chave desabilitada presa na memória do gateway; quebrou Opus, PDF e browser.
 
 ## Relação com o MEMORY.md do OpenClaw
 

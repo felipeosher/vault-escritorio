@@ -56,5 +56,8 @@ Liminar de desocupação **deferida e mantida**, com mandado de despejo + força
 - Conferir se a **multa diária** (R$ 1.000/dia, até 60 dias) foi executada/contabilizada.
 - ✅ Lado definido por Felipe em 2026-06-21: escritório atua pela **DEFESA (Spazio, ré)**.
 
+## Estratégia de defesa
+Virada de tese: ataque à **cadeia dominial** (doação de 2020 R-5 viciada), não à locação. Ver [[Estrategia defesa Spazio - v2]]. Passo mais urgente: **sustar o cumprimento do despejo (efeito suspensivo)** antes do cumprimento forçado.
+
 ## Arquivo
 - PDF original: [[Processo 0590155-64.2024.8.04.0001 - export PROJUDI 2026-06-15.pdf]] (443 págs, 33 MB)
