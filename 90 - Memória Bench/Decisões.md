@@ -146,3 +146,10 @@ Objetivo: que abrir qualquer ficha (ex.: cliente) revele de cara tudo que se con
 ## 2026-06-21 — Seletor de modelos: limpeza e convenção de rótulos
 
 **Decisão:** Catálogo enxugado de 17 → 8 modelos. Convenção de rótulo: sempre escrever a ORIGEM no final do alias separada por " · " (claudemax, API, OAuth). Lista final e detalhes no MEMORY.md do sistema.
+
+## Node PC via Tailscale conectado (2026-06-21)
+- Node `Felipe PC` (Windows, tailnet `pc` / `100.88.39.101`) pareado, aprovado e testado (system.which OK) via Tailscale.
+- Causa raiz do "não conecta": SERVIDOR tinha saído do tailnet (tailscaled `Logged out`/`NeedsLogin`), não o pareamento. `bind=tailnet` sem IP → `openclaw qr` falhava.
+- Fix: subir daemon canônico (socket `/data/.openclaw/tailscale/tailscaled.sock`), `tailscale up --hostname=openclaw-bench-managed --accept-dns=false`, Felipe reautenticou login. Servidor voltou = `openclaw-bench-managed` / `100.115.201.125`. Serve OK.
+- No PC: `Set-ExecutionPolicy CurrentUser RemoteSigned`, `npm i -g openclaw@2026.6.8` (mesma versão do gateway), `openclaw node run --host openclaw-bench-managed.tail3e6f03.ts.net --port 443 --tls`.
+- Runbook atualizado: `workspace/memory/node-windows-tailscale-runbook.md`.
