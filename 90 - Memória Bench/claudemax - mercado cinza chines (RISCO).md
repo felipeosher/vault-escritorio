@@ -36,6 +36,26 @@ Fontes: Tom's Hardware, SCMP, Reddit r/LocalLLM, letsdatascience, Medium. As "tr
 - **Bypass de verificação** — IDs gerados por IA, deepfake, KYC farms, SIM banks.
 - `.rar` de origem desconhecida = vetor clássico das campanhas **"Claude Fraud"** de infostealer (roubam API keys, credenciais, carteiras cripto).
 
+## De onde vem a cadeia (investigação aprofundada 2026-06-22)
+O ecossistema tem 4 camadas:
+
+**1. Raiz — bloqueio na China.** Anthropic bloqueia IPs chineses (403) e exige cartão internacional + telefone estrangeiro. Isso criou demanda por intermediários (中转站 = "transfer station") que revendem acesso aceitando Alipay/WeChat Pay.
+
+**2. Software (parte open-source, em si legal).** A base técnica dos painéis é open-source:
+- `one-api` (songquanpeng) e `new-api` (QuantumNous): sistemas de gerência/redistribuição de chaves LLM, unificam provedores numa API compatível OpenAI/Claude/Gemini, com dashboard, billing, rate limit e instalação 1-clique (BaoTa/EasyPanel).
+- O `claudemax` do vendedor é quase certamente um `new-api`/`one-api` rodando no EasyPanel dele. O próprio projeto `new-api` publica aviso oficial CONTRA revenda fraudulenta usando o código.
+
+**3. De onde vêm os créditos (parte ILEGAL — pergunta central do Felipe):**
+- Account pooling: contas Anthropic/OpenAI em massa farmando créditos grátis (US$5/conta nova, US$50-300 com e-mail corporativo).
+- Cartões roubados / virtuais para abrir contas pagas.
+- Subscription subdivision: 1 plano Max rachado entre dezenas (arbitragem assinatura vs. valor de tokens).
+- Refund arbitrage: abuso de política de reembolso para quota barata.
+- Bypass KYC: IDs gerados por IA, deepfake em tempo real, KYC farms em países pobres, SIM banks para SMS.
+
+**4. Como lucram além do preço:** model substitution (Opus→Sonnet/Haiku/Qwen relabelado) + data harvesting (revenda de prompts/respostas).
+
+**Conclusão:** origem = farming de créditos grátis + contas fraudulentas + assinaturas rachadas, sobre software open-source de agregação (one-api/new-api), revendido por camadas de intermediários. Preço baixo subsidiado por fraude contra a Anthropic + venda dos dados do usuário. O "Cortex claude" é um revendedor pequeno/varejo dessa cadeia.
+
 ## Risco específico para o Felipe (advogado)
 Tudo que passa pelo claudemax — petições, dados de processo, nomes de clientes, estratégia, documentos sigilosos — **está sendo potencialmente registrado por terceiro desconhecido num VPS qualquer**. Implicações:
 - Violação de **sigilo profissional** (advogado).
