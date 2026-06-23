@@ -178,3 +178,13 @@ Objetivo: que abrir qualquer ficha (ex.: cliente) revele de cara tudo que se con
 - SEMPRE transcrever áudios com **Gemini 2.5 Flash** (`GEMINI_API_KEY`). Não usar OpenAI/Whisper por padrão (chave OpenAI sem cota em 2026-06-23). Só usar Whisper se Felipe pedir explicitamente.
 - Sempre responder **por escrito** ao conteúdo do áudio, não só confirmar recebimento.
 - Conexões: [[Decisões]]
+
+## 2026-06-23 — Análise ClawHub (skills candidatas) — PENDENTE retomar
+Felipe pediu análise das skills do ClawHub p/ subir produtividade 8→10 (Bench e Marina). Pediu p/ guardar e retomar mais tarde.
+- Top: **Gog** (Google Workspace CLI — `gog` já instalado) e **Obsidian** (`obsidian-cli`, não instalado) → atacam os 2 eixos de atrito (Google + vault). **Nano Pdf** = ganho pontual jurídico.
+- Antes de instalar: passar por gate de segurança (**Skill Vetter** ou **SkillScan**), pois ClawHub é registro aberto de terceiros e lidamos com dado sigiloso.
+- Marina: escopo estreito de propósito; nada sob medida no catálogo; Gog ajuda indiretamente (agenda). Não inflar escopo dela.
+- Fora: Self-Improving/Proactive (já temos), Humanizer, Weather (já temos), Github (gh ausente), Notion, Multi Search, Tavily, AdMapix, PollyReach, Nano Banana Pro.
+- Veredito: sozinhas vão de 8→~9; o 10 depende de fluxo Google ponta a ponta + triagem de PDF lisa.
+- Plano (aguardando OK): 1) instalar vetter; 2) auditar Gog/Obsidian/Nano Pdf; 3) ativar as que passarem.
+- Detalhe completo: `memory/2026-06-23-clawhub-analise-skills.md` no workspace.
