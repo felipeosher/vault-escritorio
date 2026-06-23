@@ -19,6 +19,13 @@ atualizado: 2026-06-23
 - CPF: 011.479.732-37
 - RG: 2547931-8 - SSP/AM
 
+## Endereço residencial
+- Rua Duque de Windsor, 23
+- Condomínio Aristocrático
+- Bairro: Chapada
+- Manaus - AM
+- CEP: 69050-125
+
 ## OAB (identidade de advogado)
 - Seccional: Amazonas (OAB/AM)
 - Número de inscrição: 19500
