@@ -2,6 +2,16 @@
 
 Procedimento que o Bench segue quando o Felipe envia um PDF (principalmente WhatsApp, também webchat).
 
+## Conexões
+
+- [[Decisões]]
+- [[Analista de Processo Civil]]
+
+## Status
+
+- 2026-06-23: transformado em proposta formal de skill no Skill Workshop: `triagem-pdf-juridico-vault-20260623-4cbcdcf97b`.
+- Modo escolhido na Aula 8: **B — skill jurídica completa**.
+
 ## Passos
 
 1. **Ler e classificar** o documento:
@@ -28,6 +38,11 @@ Procedimento que o Bench segue quando o Felipe envia um PDF (principalmente What
 6. **Responder ao Felipe:** "Guardei como [tipo] em [pasta]. Resumo: …".
    - Tipo óbvio com ação clara (ex.: prazo identificado) → já entregar análise.
    - Caso contrário → perguntar o que fazer.
+
+7. **Análise jurídica quando couber:**
+   - Processo cível completo → usar a skill `analista-processo-civil`.
+   - Peça, decisão ou documento isolado → fazer análise proporcional: efeito prático, prazo aparente, risco e providência recomendada.
+   - Separar fatos extraídos, inferências, riscos e sugestões para revisão humana.
 
 ## Manutenção
 

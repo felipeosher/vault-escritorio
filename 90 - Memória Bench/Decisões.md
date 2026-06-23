@@ -25,6 +25,26 @@ Registro de decisões combinadas entre Felipe e Bench. Ordem cronológica.
 
 ---
 
+## 2026-06-23 — Aula 8: triagem de PDF jurídico virou proposta de skill
+
+**Contexto:** na Aula 8 do mini-curso OpenClaw, Felipe escolheu transformar o fluxo de triagem jurídica de PDFs em uma skill durável.
+
+**Decisão:** criar a proposta `triagem-pdf-juridico-vault`, em modo **B — skill jurídica completa**.
+
+**Escopo da skill:**
+- Felipe envia PDFs/documentos jurídicos pelo WhatsApp, WebChat ou upload local.
+- Bench preserva o PDF original, classifica o documento, extrai dados-chave, cria nota-resumo e salva tudo no vault.
+- A skill interliga cliente, processo e contrato com `[[wikilinks]]`.
+- Quando for processo cível completo, usa o fluxo da skill `analista-processo-civil`.
+- Quando houver prazo, risco ou providência óbvia, Bench já avisa Felipe junto com o resumo.
+- Ao final, faz commit/push do vault e reporta o local salvo.
+
+**Proposta criada:** `triagem-pdf-juridico-vault-20260623-4cbcdcf97b` no Skill Workshop, status pendente.
+
+**Conexões:** [[Fluxo de triagem automática de PDF]]
+
+---
+
 ## 2026-06-21 — Regra permanente: interligar notas (cliente ↔ contrato ↔ processo)
 
 **Contexto:** Felipe perguntou se uma nota pode se conectar a outra como no Notion. Sim — o Obsidian faz isso com `[[wikilinks]]` + backlinks automáticos + grafo. É inclusive superior ao Notion nesse ponto.
