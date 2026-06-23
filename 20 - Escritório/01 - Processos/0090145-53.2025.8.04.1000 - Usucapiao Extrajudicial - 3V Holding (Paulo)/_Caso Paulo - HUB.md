@@ -3,7 +3,7 @@ tipo: hub
 caso: Paulo / 3V Holding
 cliente: [[Paulo]]
 status: ATIVO — defesa contra ação de nulidade (liminar de bloqueio deferida)
-atualizado: 2026-06-21
+atualizado: 2026-06-23
 ---
 
 # 🗂️ Caso Paulo / 3V Holding — HUB
@@ -28,7 +28,8 @@ Felipe regularizou uma área no Tarumã para o **Paulo (3V Holding)** via usucap
 
 ## 🧭 Notas de trabalho
 - [[Caso Paulo - Memorial Agravo v2 (completo)]] — ⭐ **MEMORIAL DEFINITIVO** — 15 pontos (9 originais + 6 novos), o documento de referência da defesa
-- [[Caso Paulo - Agravo de Instrumento (peça pronta)]] — ✅ **PEÇA REDIGIDA E ASSINADA** (Felipe + Thaís) — pronta para protocolo
+- [[Caso Paulo - Agravo v3 (analise e diff vs v2)]] — 🆕 **VERSÃO MAIS RECENTE (v3, 23/06)** — peça mais robusta; ⚠️ tem 2 divergências de dados a checar antes de protocolar
+- [[Caso Paulo - Agravo de Instrumento (peça pronta)]] — versão v2 REDIGIDA E ASSINADA (Felipe + Thaís)
 - [[Caso Paulo - Munição extra (pontos novos)]] — 🔥 **pontos NOVOS** tirados dos documentos da própria autora (estoppel, posse x propriedade, residência dupla)
 - [[Caso Paulo - Memorial Agravo de Instrumento]] — ⚔️ munição original do agravo (9 pontos)
 - [[Caso Paulo - Estratégia de defesa]] — teses, pontos fortes/fracos, movimentos
