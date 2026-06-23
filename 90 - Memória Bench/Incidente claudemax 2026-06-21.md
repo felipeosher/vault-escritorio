@@ -7,12 +7,9 @@ status: resolvido
 # Incidente claudemax + PDF + browser (2026-06-21)
 
 ## Conexões
-- [[claudemax - mercado cinza chines (RISCO)]]
 - [[Aprendizados operacionais]]
 - [[Decisões]]
 - [[00 - Índice da Memória]]
-
-> ⚠️ ATUALIZAÇÃO 2026-06-22: descobriu-se que o claudemax é um proxy do **mercado cinza chinês** de revenda de API Claude (fraude + data harvesting). As "chaves que morrem/precisam resetar" descritas aqui são sintoma das contas fraudulentas sendo derrubadas pela Anthropic. Ver [[claudemax - mercado cinza chines (RISCO)]].
 
 ## O que aconteceu
 A API claudemax parou de responder pelo gateway, mesmo com a chave válida. Análise de PDF (inclusive pelo WhatsApp) falhava completamente. Tudo caía em fallback silencioso.
