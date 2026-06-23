@@ -153,3 +153,8 @@ Objetivo: que abrir qualquer ficha (ex.: cliente) revele de cara tudo que se con
 - Fix: subir daemon canônico (socket `/data/.openclaw/tailscale/tailscaled.sock`), `tailscale up --hostname=openclaw-bench-managed --accept-dns=false`, Felipe reautenticou login. Servidor voltou = `openclaw-bench-managed` / `100.115.201.125`. Serve OK.
 - No PC: `Set-ExecutionPolicy CurrentUser RemoteSigned`, `npm i -g openclaw@2026.6.8` (mesma versão do gateway), `openclaw node run --host openclaw-bench-managed.tail3e6f03.ts.net --port 443 --tls`.
 - Runbook atualizado: `workspace/memory/node-windows-tailscale-runbook.md`.
+
+## Transcrição de áudio (2026-06-23)
+- SEMPRE transcrever áudios com **Gemini 2.5 Flash** (`GEMINI_API_KEY`). Não usar OpenAI/Whisper por padrão (chave OpenAI sem cota em 2026-06-23). Só usar Whisper se Felipe pedir explicitamente.
+- Sempre responder **por escrito** ao conteúdo do áudio, não só confirmar recebimento.
+- Conexões: [[Decisões]]
