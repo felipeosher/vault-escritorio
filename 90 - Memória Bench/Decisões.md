@@ -4,6 +4,18 @@ Registro de decisões combinadas entre Felipe e Bench. Ordem cronológica.
 
 ---
 
+## 2026-06-24 — Marina mudou para GPT 5.5
+
+**Contexto:** Felipe pediu para mudar a linguagem/modelo da agente Marina para GPT 5.5.
+
+**Alteração aplicada:** agente `concierge` / Marina alterada de `anthropic/claude-opus-4.8` para `openai/gpt-5.5`.
+
+**Validação:** `openclaw agents list --bindings` confirmou `Model: openai/gpt-5.5` para a Marina.
+
+**Conexões:** [[Marina modelo GPT 5.5]]
+
+---
+
 ## 2026-06-21 — Triagem automática de PDF + regra de memória no vault
 
 **Contexto:** Felipe quer que, ao jogar um PDF (principalmente pelo WhatsApp), o Bench classifique, guarde no Obsidian e analise/pergunte o que fazer.
