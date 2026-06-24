@@ -44,3 +44,10 @@ A API claudemax parou de responder pelo gateway, mesmo com a chave válida. Aná
 - [ ] Realinhar o gateway sob o `server.mjs` para religar o browser e restaurar autorestart.
 - [ ] `memory_search` (embeddings OpenAI) fora por quota 429 — recarregar crédito ou trocar provider de embeddings.
 - [ ] Rastrear encomenda Correios AD593614245BR (bloqueado pelo browser fora).
+
+## Recorrência em 2026-06-23
+- Felipe pediu novo diagnóstico da API claudemax.
+- Teste direto no endpoint `https://claudemax.uz2mit.easypanel.host/v1/messages`, usando a chave configurada no OpenClaw, retornou HTTP 401 com `API key disabled` / `authentication_error`.
+- O endpoint `/v1/models` respondeu HTTP 200, então o servidor/baseUrl/rede estão acessíveis; a falha atual é autenticação/chave/conta claudemax, não OpenClaw.
+- Logs do OpenClaw confirmaram repetidamente falhas em `anthropic/claude-opus-4.8` e `anthropic/auto` pelo mesmo motivo. Algumas sessões caíram para `google/gemini-2.5-flash`; outras, sem fallback na sessão, falharam antes de responder.
+- Mitigação aplicada: modelo padrão global alterado temporariamente para `google/gemini-2.5-flash`. Quando a chave claudemax for reativada/renovada, voltar o default para `anthropic/claude-opus-4.8`.
