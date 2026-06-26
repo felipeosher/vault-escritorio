@@ -44,3 +44,10 @@ Ver nota dedicada: [[Incidente claudemax 2026-06-21]].
 - Lição 2: leitura de PDF confiável aqui = extrair texto com `pypdf` via `exec`, não depender do plugin `pdf` nativo (que falha no anexo `media://`).
 - Lição 3: o gateway roda sob supervisor `server.mjs` (wrapper Hostinger), **não** systemd. Restart manual fora dessa árvore derruba plugins (ex.: browser) e tira o autorestart. Realinhar sob `server.mjs` (ou restart do container) conserta.
 - Regra reforçada pelo Felipe: **usar o Obsidian como segundo cérebro de verdade** — gravar incidentes/decisões no vault na hora, não só no MEMORY.md.
+
+## 2026-06-26 — Claude mudou de claudemax para claudete
+- Felipe trocou a rota Anthropic/Claude do OpenClaw para `https://claudete.claudelipe.com/v1`.
+- A chave foi atualizada na configuração do OpenClaw, mas não deve ser registrada no vault.
+- O endpoint novo lista modelos com prefixo `xpiki/kr/`, então o catálogo Anthropic foi atualizado para IDs como `anthropic/xpiki/kr/claude-opus-4.8`, `anthropic/xpiki/kr/claude-sonnet-4.6` e `anthropic/xpiki/kr/claude-haiku-4.5`.
+- Rótulos do dashboard trocados de `claudemax` para `claudete`.
+- Testes confirmados: `/v1/models` retornou 200; chamadas diretas com `xpiki/kr/claude-haiku-4.5`, `xpiki/kr/claude-sonnet-4.6` e `xpiki/kr/claude-opus-4.8` retornaram 200; `openclaw agent` local e via Gateway responderam corretamente com `anthropic/xpiki/kr/claude-haiku-4.5`.
