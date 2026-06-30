@@ -4,6 +4,16 @@ Registro de decisões combinadas entre Felipe e Bench. Ordem cronológica.
 
 ---
 
+## 2026-06-30 — Encerrar monitoramento de emails/heartbeat TIM/OKX
+
+**Contexto:** Felipe avisou que o assunto dos emails já foi resolvido e mandou parar tudo relacionado a heartbeat/email.
+
+**Decisão operacional:** não procurar mais por esses emails e não reativar monitoramento de Gmail/heartbeat sobre TIM/OKX sem novo pedido explícito.
+
+**Ação aplicada:** cron `Monitor email TIM/OKX -> WhatsApp Felipe` removido e `HEARTBEAT.md` limpo para ficar sem tarefas periódicas.
+
+---
+
 ## 2026-06-24 — Marina mudou para GPT 5.5
 
 **Contexto:** Felipe pediu para mudar a linguagem/modelo da agente Marina para GPT 5.5.
