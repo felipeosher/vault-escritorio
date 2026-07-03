@@ -4,6 +4,16 @@ Registro de decisões combinadas entre Felipe e Bench. Ordem cronológica.
 
 ---
 
+## 2026-07-03 — Encerrar monitoramento Hostinger no heartbeat
+
+**Contexto:** Felipe avisou que a questão da Hostinger já foi encerrada há muito tempo e pediu para tirar isso do heartbeat.
+
+**Decisão operacional:** não colocar Hostinger no `HEARTBEAT.md` e não reativar monitoramento dessa thread/assunto sem novo pedido explícito.
+
+**Ação aplicada:** cron `Monitorar conversa Hostinger` removido (id `35a659ca-1dae-4ac5-a23f-cf216600d003`). O `HEARTBEAT.md` principal já estava vazio/sem checks ativos.
+
+---
+
 ## 2026-06-30 — Encerrar monitoramento de emails/heartbeat TIM/OKX
 
 **Contexto:** Felipe avisou que o assunto dos emails já foi resolvido e mandou parar tudo relacionado a heartbeat/email.
