@@ -15,3 +15,15 @@ Alteração feita no OpenClaw:
 - Claude Opus 4.8 continua primário por preferência operacional anterior do Felipe.
 
 Backup do config criado antes da alteração: `/data/.openclaw/openclaw.json.bak-gpt56-20260710-000931`.
+
+## Correção posterior
+
+Felipe apontou que os modelos antigos ainda não tinham sido excluídos. Correção feita:
+- Removidos do seletor configurado: `codex/gpt-5.5`, `openai/gpt-5.3-codex`, `openai/gpt-5.4`, `openai/gpt-5.4-pro`, `openai/gpt-5.5`.
+- `models.mode` mudou de `merge` para `replace`, para evitar mescla automática com catálogo interno.
+- Provider OpenAI declarado explicitamente com GPT-5.6 Sol/Terra/Luna.
+- Catálogo embutido do plugin OpenAI ajustado em `/data/.npm-global/lib/node_modules/openclaw/dist/extensions/openai/openclaw.plugin.json`: removidos GPT 5.3/5.4/5.5; mantidos GPT-5.6 e modelos `o*`.
+
+Backups:
+- `/data/.openclaw/openclaw.json.bak-remove-old-openai-20260710-001423`
+- `/data/.npm-global/lib/node_modules/openclaw/dist/extensions/openai/openclaw.plugin.json.bak-gpt56-20260710-002005`
