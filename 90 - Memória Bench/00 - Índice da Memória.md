@@ -14,6 +14,10 @@ O Felipe pode ler e editar livremente. Eu leio de volta para manter continuidade
   - [[Aprendizados operacionais]]
   - `Contexto de negócios.md`
 
+## Contexto consolidado
+
+- [[Contexto Consolidado - Marina (jun-jul 2026)]] — apanhado de todo o histórico Felipe × Marina no WhatsApp (jun–jul 2026): regras da Marina, grupo do escritório, bateria de exames (concluída), processos jurídicos, pessoas e itens encerrados. Tudo já realizado; mantido como memória/continuidade.
+
 ## Casos / clientes
 
 - [[Caso Paulo - 3V Holding]] — gatilho "processo do Paulo": regularização fundiária (usucapião 0090145-53.2025.8.04.1000) + tentativa de fraude pós-regularização. Aguardando processo de fraude e pontos críticos via WhatsApp.
